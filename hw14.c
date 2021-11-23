@@ -18,7 +18,7 @@ static void batman(int signal){
 
         char * message = "BAD BAD, PROGRAM EXIT";
         write(fd, message, strlen(message));
-        exit(0)
+        exit(0);
     }else if(signal == SIGUSR1){
         printf("PPID: %d\n", getppid());
     }
